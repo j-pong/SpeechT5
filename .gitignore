@@ -3,3 +3,4 @@ tools/anaconda
 tools/miniconda.sh
 tools/activate_python.sh
 */downloads
+*/exp

@@ -421,9 +421,9 @@ class Jsc2tPretrainingTask(FairseqTask):
             self.state.add_factory("dictionaries", self.load_dictionaries)
 
         if cfg.text_cfg.data_config is not None:
-            self.text_data_cfg = S2TJointDataConfig(Path(f"{cfg.text_cfg.text_data}/{cfg.text_cfg.data_config}"))
-            self.cfg.text_cfg.bpe = self.text_data_cfg.bpe_tokenizer["bpe"]
-        else:
+        #     self.text_data_cfg = S2TJointDataConfig(Pah(f"{cfg.text_cfg.text_data}/{cfg.text_cfg.data_config}"))
+        #     self.cfg.text_cfg.bpe = self.text_data_cfg.bpe_tokenizer["bpe"]
+        # else:
             self.text_data_cfg = None
 
     @property
